@@ -1,0 +1,52 @@
+/* CSS styles for the board */
+body{
+    background-color: black;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 4em;
+    color:  rgba(53, 206, 94, 0.75) ;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(53, 206, 94, 0.75);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(53, 206, 94, 0.75);
+    box-shadow: 0px 0px 15px 5px rgba(53, 206, 94, 0.75);
+}
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    /* text-decoration: red; */
+    color: green;
+}
+td{
+-webkit-box-shadow: 0px 0px 15px 5px rgba(234, 11, 11, 0.75);
+-moz-box-shadow: 0px 0px 15px 5px rgba(234, 11, 11, 0.75);
+box-shadow: 0px 0px 15px 5px rgba(234, 11, 11, 0.75);
+}
+
+.announce{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+  width: 50%;
+  height: 100px;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(74, 234, 11, 0.75);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(11, 234, 11, 0.75);
+    box-shadow: 0px 0px 15px 5px rgba(11, 234, 18, 0.75);
+}
+
+.announce p{
+    font-size: 6em;
+    -webkit-text-fill-color: rgba(234, 26, 11, 0.75);
+}

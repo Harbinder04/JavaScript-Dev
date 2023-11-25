@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- square bracket is used to give the value to coordinates dinamically i.e.according to our requirements . -->
+    <div class="bg-green-800 text-cyan-50 my-[67px] mx-[30px]">   
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laudantium numquam autem blanditiis 
+        <br>unde iusto recusandae inventore ducimus sed odio adipisci dolore excepturi, hic dolores soluta iste porro magnam dolorum!
+    </div>
+  <!-- there are some break point in css. 
+  sm - for small devices 
+  md - for smart phone etc. 
+  lg - for tablets  
+  xl - for laptops 
+  2xl - for large screens.  -->
+
+<div class=" lg:hidden mx-6 bg-red-500 sm:bg-green-800 sm:text-yellow-400 lg:space-x-7 lg:bg-fuchsia-500 lg:text-blue-500">
+    This is for break points. <br>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid iure, iste nostrum laudantium dolores eius recusandae obcaecati esse quam perspiciatis laboriosam nemo consequatur corrupti totam aliquam, exercitationem expedita illum necessitatibus!
+</div>
+<!-- We can change break points manually using config.js file.  -->
+<div class=" hidden lg:block mx-6 bg-red-500 sm:bg-green-800 sm:text-yellow-400 lg:space-x-7 lg:bg-fuchsia-500 lg:text-blue-500">
+    This is for break points. <br>
+    For large screen. 
+</div>
+</body>
+</html>
