@@ -13,15 +13,33 @@
   
 //---------------Calculator Example--------------//
 
+// Q: perform the all the calculation task with 10 and array element.
 const arr = [2, 3, 4, 5, 6, 7, 8];
 
-function CalculatorMultiply(arr = []){
+function Calculator(arr = [], callback){   // we give call back function to perform various task with the help of same function either we have to create every task different time.
     const ans = [];
     for(let i = 0; i < arr.length; i++){
-       ans.push(arr[i]*10);
+        const element = callback(arr[i]);
+       ans.push(element);
     }
-
     console.log(ans);
 }
-Calculator(arr);
+
+function multiply(a){
+    return a*10;
+}
+
+function divide(a){
+  return a/10;
+}
+
+function add(a){
+    return a+10;
+}
+
+// perform substraction
+Calculator(arr, (a)=>{
+    return a - 10;
+});
+Calculator(arr, divide);
 
