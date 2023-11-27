@@ -1,0 +1,12 @@
+
+{   
+    "_comment" : "There is no way to make a comment in javaScript but you can me it a object but remember that it will also get processed on server so add comment carefully like this.",
+    
+    "a": {
+        "name": "Harbinder Singh"
+    },
+    "b": {
+        "course" : "BCA",
+        "UID" : "22BCA10974"
+    }
+}
