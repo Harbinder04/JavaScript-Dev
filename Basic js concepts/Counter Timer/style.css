@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(to right,rgb(199, 11, 70), rgb(61, 109, 180));
+}
+
+.container{
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+}
+
+.counterTimer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.counterTimer > p{
+    padding: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.counterTimer > p > span{
+    display: block;
+    font-size: 2rem;
+}
