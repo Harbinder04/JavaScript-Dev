@@ -4,7 +4,6 @@ const description = document.getElementById("description");
 const container = document.querySelector(".container");
 const task = localStorage.getItem("task") ? JSON.parse(localStorage.getItem("task")):[];
 
-showTasks();
 function removeTask(){
     task.forEach(()=>{
     const div = document.querySelector(".tasks");

@@ -10,7 +10,7 @@ const second = 1000, minute = 60 * second, hour = minute * 60, day = 24 * hour;
 const timefunction = () =>{
     let now = new Date();
     let dd = String(now.getDate()).padStart(2, "0"),
-    mm = String(now.getMonth() + 1).padEnd(2, "0"),
+    mm = String(now.getMonth() + 1).padStart(2, "0"),
     yyyy = now.getFullYear();
 
     let enterMonth = prompt("Enter the month").padStart(2,"0");
