@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('url');
+mongoose.connect('mongodb+srv://harbindersingh04:QrxhoHl013MW62yk@cluster0.nrjrnet.mongodb.net/user');
 
 const todoSchema = new mongoose.Schema({
     title: String,
@@ -11,5 +11,5 @@ const todoSchema = new mongoose.Schema({
     },
 });
 
-const todo = moongoose.model('todos', todoSchema);
+const todo = mongoose.model('todos', todoSchema);
 module.exports = {todo}

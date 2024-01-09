@@ -1,25 +1,27 @@
 import { useState } from "react"
 
-export function CreateTodo(props){
-  const [title, setTitle] = useState("")
+export function CreateTodo(){
+  const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   return (
     <div>
-        <input id="title" type="text" placeholder="Title" onChange={(e)=>{
-          const value = e.target.value;
-          setTitle(value);
-        }}> </input>
+        <input id="title" type="text" placeholder="Title" onChange={function(e){
+          // const value = e.target.value;
+          setTitle(e.target.value);
+        }} />
         <br />
-        <input type="text" placeholder="Description"  onChange={function(e){
+        <input id="description" type="text" placeholder="Description"  onChange={function(e){
           setDescription(e.target.value);
-        }}></input><br />
+        }} />
+        <br />
 
         <button onClick={ ()=>{
           fetch("http://localhost:3000/todo",{
             method: "POST",
             body: JSON.stringify({
               title: title,
-              description: description
+              description: description,
+              completed : false
             }), 
             headers : {
               "Content-type" : "application/json"
@@ -27,7 +29,7 @@ export function CreateTodo(props){
           })
         .then(async function(res){
           const json = await res.json();
-          alert("todo added");
+          confirm(json)
         })
       }}
         >Add Todo</button>

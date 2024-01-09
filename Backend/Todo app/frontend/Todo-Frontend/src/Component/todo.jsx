@@ -1,11 +1,11 @@
-export function Todos({todos}){
+export function Todos(props){  // good practice is to use destructor {todos}
     return(
         <>
-        {todos.map(function (todo){
+        {props.todos.map(function (todo){
           return <div>
             <h1>{todo.title}</h1>
             <p>{todo.description}</p>
-            <button>{}todo.complete == true ? "Done" : "Mark as Complete"</button>
+            <button>{todo.completed == true ? "Done" : "Mark as Complete"}</button>
           </div>
         })}
         </>

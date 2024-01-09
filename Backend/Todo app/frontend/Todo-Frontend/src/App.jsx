@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { CreateTodo } from './Component/create'
-import { Todos } from './Component/todo'
+import { CreateTodo } from './Component/Create'
+import { Todos } from './Component/Todo'
 
 function App() {
   const [todos, setTodos] = useState([]);
