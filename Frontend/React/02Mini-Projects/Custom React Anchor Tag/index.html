@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+     <customRender/>
+    </div>
+</body>
+<script>
+   // 1. Create a React-like element object
+const reactElement = {
+  type: 'a',
+  props: {
+    href: 'https://google.com',
+    target: '_blank',
+  },
+  children: 'Click me to visit google!',
+};
+
+// 2. Create a function to generate HTML from the React-like element
+function generateHTML(element) {
+  const { type, props, children } = element;
+  return `<${type} ${Object.entries(props).map(([key, value]) => `${key}="${value}"`).join(' ')}>${children}</${type}>`;
+}
+
+// 3. Create a rendering function
+function customRender(element, path) {
+  const html = generateHTML(element);
+  document.querySelector(path).innerHTML = html;
+}
+
+// 4. Render the anchor tag
+customRender(reactElement, '#root');
+
+</script>
+</html>
